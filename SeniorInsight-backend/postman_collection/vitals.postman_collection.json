@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "f1g2h3i4-j5k6-7890-1234-a1b2c3d4e5f6",
+		"name": "SeniorInsight API - Vitals",
+		"description": "Endpoints para gerenciar sinais vitais.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Vitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/vitals/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vitals",
+						""
+					]
+				},
+				"description": "Retorna uma lista de todos os registros de sinais vitais."
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE New Vital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Glicemia\",\n  \"value\": \"99\",\n  \"unit\": \"mg/dL\",\n  \"status\": \"stable\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/vitals/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vitals",
+						""
+					]
+				},
+				"description": "Cria um novo registro de sinal vital."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Vital",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"value\": \"95%\",\n  \"status\": \"stable\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/vitals/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"vitals",
+						"3"
+					]
+				},
+				"description": "Atualiza parcialmente um registro de sinal vital. Altere o `id` na URL para o registro que deseja atualizar. Este exemplo atualiza o valor e o status do registro com id=3 (Oxygen Level)."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/v1",
+			"type": "string"
+		}
+	]
+}

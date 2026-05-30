@@ -1,0 +1,20 @@
+# Ambientes Virtuais
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+
+# Arquivos de build e distribuição
+build/
+dist/
+*.egg-info/
+
+# Logs e bancos de dados locais
+*.log
+*.db
+*.sqlite3
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

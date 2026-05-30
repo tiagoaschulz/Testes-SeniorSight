@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "e1f2a3b4-c5d6-7890-1234-f5g6h7i8j9k0",
+		"name": "SeniorInsight API - History",
+		"description": "Endpoints para gerenciar o histórico de eventos.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All History Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/history/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"history",
+						""
+					]
+				},
+				"description": "Retorna uma lista de todos os eventos do histórico."
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE New History Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"event_type\": \"checkup\",\n  \"title\": \"Consulta com Cardiologista\",\n  \"description\": \"Exame de rotina anual.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/history/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"history",
+						""
+					]
+				},
+				"description": "Cria um novo evento no histórico."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE History Event",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Exame de rotina anual. Pressão arterial normal.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/history/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"history",
+						"3"
+					]
+				},
+				"description": "Atualiza parcialmente um evento de histórico. Altere o `id` na URL para o evento que deseja atualizar."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/v1",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "d1e2c3b4-a5f6-7890-1234-b5c6d7e8f9a0",
+		"name": "SeniorInsight API - Medications",
+		"description": "Endpoints para gerenciar medicamentos.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Medications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/medications/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"medications",
+						""
+					]
+				},
+				"description": "Retorna uma lista de todos os medicamentos cadastrados no banco de dados."
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE New Medication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Paracetamol\",\n  \"dosage\": \"750mg\",\n  \"frequency\": \"A cada 8 horas\",\n  \"status\": \"ok\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/medications/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"medications",
+						""
+					]
+				},
+				"description": "Cria um novo registro de medicamento. O `id` é gerado automaticamente."
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Medication",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"status\": \"atrasado\",\n  \"last_dose_time\": \"2026-05-30T10:00:00Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/medications/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"medications",
+						"1"
+					]
+				},
+				"description": "Atualiza parcialmente um medicamento existente. Altere o `id` na URL para o medicamento que deseja atualizar. Este exemplo atualiza o status e a data da última dose do medicamento com id=1."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/v1",
+			"type": "string"
+		}
+	]
+}

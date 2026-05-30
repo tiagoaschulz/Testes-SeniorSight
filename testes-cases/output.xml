@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-05-30T15:15:37.466498" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cases" source="C:\Users\Tiago\OneDrive\Área de Trabalho\trabalho_teste\testes-cases\test_cases.robot">
+<test id="s1-t1" name="Verify Home Page Loads Correctly" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:37.801969" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:37.801680" elapsed="1.124576"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:38.926748" elapsed="0.032427"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:38.972352" level="INFO">Current page contains text 'SeniorInsight'.</msg>
+<arg>SeniorInsight</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-30T15:15:38.959527" elapsed="0.012958"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:38.983094" level="INFO">Current page contains element '//header[contains(@class, 'page-header')]'.</msg>
+<arg>//header[contains(@class, 'page-header')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:15:38.972885" elapsed="0.010314"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:38.991336" level="INFO">Current page contains element '//nav[contains(@class, 'bottom-nav')]'.</msg>
+<arg>//nav[contains(@class, 'bottom-nav')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:15:38.983472" elapsed="0.007972"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:15:38.991745" elapsed="2.233961"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:15:37.800677" elapsed="3.425410"/>
+</test>
+<test id="s1-t2" name="Verify Alert Banner is Displayed" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:41.227167" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:41.226953" elapsed="0.999465"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:42.226748" elapsed="0.029464"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:42.266725" level="INFO">Current page contains element '//div[contains(@class, 'alert-banner')]'.</msg>
+<arg>//div[contains(@class, 'alert-banner')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:15:42.256680" elapsed="0.010169"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:15:42.267257" elapsed="2.228660"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:15:41.226573" elapsed="3.269736"/>
+</test>
+<test id="s1-t3" name="Verify Vital Signs are Displayed" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:44.497454" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:44.497221" elapsed="1.476371"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:45.973941" elapsed="0.019790"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:46.007481" level="INFO">Current page contains element '//div[contains(@class, 'vital-card')]'.</msg>
+<arg>//div[contains(@class, 'vital-card')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:15:45.994219" elapsed="0.013395"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:15:46.008077" elapsed="2.211669"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:15:44.496835" elapsed="3.723234"/>
+</test>
+<test id="s1-t4" name="Verify Navigation to Medications Page" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:48.220975" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:48.220755" elapsed="1.483634"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:49.704840" elapsed="0.032794"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:49.738257" level="INFO">Clicking link '/medications'.</msg>
+<arg>/medications</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:15:49.737969" elapsed="0.064522"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:49.806294" level="INFO">Current location is 'http://localhost:5173/medications'.</msg>
+<arg>${BASE_URL}/medications</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:49.802786" elapsed="0.003607"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:15:49.806678" elapsed="2.234216"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:15:48.220401" elapsed="3.820800"/>
+</test>
+<test id="s1-t5" name="Verify Medications Page Loads Correctly" line="38">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:52.042292" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications'.</msg>
+<arg>${BASE_URL}/medications</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:52.042018" elapsed="1.486586"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:53.528990" elapsed="0.027950"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:53.757701" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:15:53.757954" level="FAIL">Page should have contained text 'Medicações' but did not.</msg>
+<arg>Medicações</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-05-30T15:15:53.557396" elapsed="0.202697">Page should have contained text 'Medicações' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>//div[contains(@class, 'medication-card')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:53.760500" elapsed="0.000051"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:53.760763" elapsed="0.000034"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:15:52.041554" elapsed="1.719508">Page should have contained text 'Medicações' but did not.</status>
+</test>
+<test id="s1-t6" name="Verify Search for a Medication" line="45">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:53.762343" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications'.</msg>
+<arg>${BASE_URL}/medications</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:53.762044" elapsed="1.017429"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:54.779907" elapsed="0.021622"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:54.802238" level="INFO">Typing text 'Paracetamol' into text field '//input[@placeholder='Buscar']'.</msg>
+<msg time="2026-05-30T15:15:55.018167" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:15:55.018358" level="FAIL">Element with locator '//input[@placeholder='Buscar']' not found.</msg>
+<arg>//input[@placeholder='Buscar']</arg>
+<arg>Paracetamol</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:15:54.801898" elapsed="0.219433">Element with locator '//input[@placeholder='Buscar']' not found.</status>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>//input[@placeholder='Buscar']</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:55.021671" elapsed="0.000040"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Paracetamol</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:55.021918" elapsed="0.000028"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:55.022112" elapsed="0.000038"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:15:53.761598" elapsed="1.260784">Element with locator '//input[@placeholder='Buscar']' not found.</status>
+</test>
+<test id="s1-t7" name="Verify Medication Card Details" line="53">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:55.028418" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications'.</msg>
+<arg>${BASE_URL}/medications</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:55.028125" elapsed="1.118532"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:56.147630" elapsed="0.023028"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:56.171250" level="INFO">Clicking element '//div[contains(@class, 'medication-card')][1]'.</msg>
+<arg>//div[contains(@class, 'medication-card')][1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:15:56.170994" elapsed="0.060649"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:56.369534" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:15:56.369684" level="FAIL">Page should have contained text 'Detalhes do Medicamento' but did not.</msg>
+<arg>Detalhes do Medicamento</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-05-30T15:15:56.231935" elapsed="0.138701">Page should have contained text 'Detalhes do Medicamento' but did not.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:56.370952" elapsed="0.000038"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:15:55.022840" elapsed="1.348538">Page should have contained text 'Detalhes do Medicamento' but did not.</status>
+</test>
+<test id="s1-t8" name="Verify Navigation to New Medication Page" line="60">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:56.372728" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications'.</msg>
+<arg>${BASE_URL}/medications</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:56.372394" elapsed="1.468031"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:57.841636" elapsed="0.022123"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:57.864450" level="INFO">Clicking link '/medications/new'.</msg>
+<msg time="2026-05-30T15:15:58.060844" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:15:58.061008" level="FAIL">Link with locator '/medications/new' not found.</msg>
+<arg>/medications/new</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:15:57.864146" elapsed="0.198152">Link with locator '/medications/new' not found.</status>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${BASE_URL}/medications/new</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:58.062651" elapsed="0.000048"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:15:58.062892" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:15:56.371909" elapsed="1.691254">Link with locator '/medications/new' not found.</status>
+</test>
+<test id="s1-t9" name="Verify New Medication Page Loads Correctly" line="68">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:58.064550" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications/new'.</msg>
+<arg>${BASE_URL}/medications/new</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:15:58.064250" elapsed="1.104733"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:15:59.169411" elapsed="0.022569"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:59.204831" level="INFO">Current page contains text 'Novo Medicamento'.</msg>
+<arg>Novo Medicamento</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-30T15:15:59.192268" elapsed="0.012658"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:15:59.217500" level="INFO">Current page contains element '//form'.</msg>
+<arg>//form</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:15:59.205202" elapsed="0.012429"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:15:59.218072" elapsed="2.286879"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:15:58.063791" elapsed="3.441565"/>
+</test>
+<test id="s1-t10" name="Verify Add New Medication" line="75">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:01.506543" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications/new'.</msg>
+<arg>${BASE_URL}/medications/new</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:01.506319" elapsed="0.903508"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:02.410160" elapsed="0.023752"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:02.434586" level="INFO">Typing text 'Ibuprofeno' into text field '//input[@name='name']'.</msg>
+<arg>//input[@name='name']</arg>
+<arg>Ibuprofeno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:16:02.434255" elapsed="0.107248"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:02.542208" level="INFO">Typing text '600mg' into text field '//input[@name='dosage']'.</msg>
+<arg>//input[@name='dosage']</arg>
+<arg>600mg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:16:02.541909" elapsed="0.076306"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:02.619065" level="INFO">Typing text '12:00' into text field '//input[@name='time']'.</msg>
+<msg time="2026-05-30T15:16:02.710674" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:16:02.710835" level="FAIL">Element with locator '//input[@name='time']' not found.</msg>
+<arg>//input[@name='time']</arg>
+<arg>12:00</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:16:02.618682" elapsed="0.093791">Element with locator '//input[@name='time']' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:02.712868" elapsed="0.000042"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${BASE_URL}/medications</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:02.713117" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Ibuprofeno</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:02.713507" elapsed="0.000056"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:02.713774" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:16:01.505890" elapsed="1.208350">Element with locator '//input[@name='time']' not found.</status>
+</test>
+<test id="s1-t11" name="Verify Error on Invalid Form Submission" line="86">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:02.715593" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications/new'.</msg>
+<arg>${BASE_URL}/medications/new</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:02.715235" elapsed="1.054251"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:03.769823" elapsed="0.026018"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:03.796589" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:16:03.796231" elapsed="0.103057"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:04.009472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:16:04.009638" level="FAIL">Page should have contained text 'Por favor, preencha todos os campos.' but did not.</msg>
+<arg>Por favor, preencha todos os campos.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-05-30T15:16:03.899601" elapsed="0.111101">Page should have contained text 'Por favor, preencha todos os campos.' but did not.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:04.010986" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:16:02.714738" elapsed="1.296510">Page should have contained text 'Por favor, preencha todos os campos.' but did not.</status>
+</test>
+<test id="s1-t12" name="Verify Redirect After Adding Medication" line="93">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:04.012441" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/medications/new'.</msg>
+<arg>${BASE_URL}/medications/new</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:04.012183" elapsed="1.046180"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:05.058697" elapsed="0.031494"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:05.090874" level="INFO">Typing text 'Dipirona' into text field '//input[@name='name']'.</msg>
+<arg>//input[@name='name']</arg>
+<arg>Dipirona</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:16:05.090544" elapsed="0.124970"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:05.216207" level="INFO">Typing text '500mg' into text field '//input[@name='dosage']'.</msg>
+<arg>//input[@name='dosage']</arg>
+<arg>500mg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-30T15:16:05.215873" elapsed="0.080580"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:05.297146" level="INFO">Typing text '08:00' into text field '//input[@name='time']'.</msg>
+<msg time="2026-05-30T15:16:05.384809" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:16:05.385085" level="FAIL">Element with locator '//input[@name='time']' not found.</msg>
+<arg>//input[@name='time']</arg>
+<arg>08:00</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:16:05.296824" elapsed="0.090354">Element with locator '//input[@name='time']' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:05.387614" elapsed="0.000036"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>${BASE_URL}/medications</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:05.387864" elapsed="0.000039"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:05.388209" elapsed="0.000049"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:16:04.011765" elapsed="1.376788">Element with locator '//input[@name='time']' not found.</status>
+</test>
+<test id="s1-t13" name="Verify History Page Loads Correctly" line="104">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:05.389648" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/history'.</msg>
+<arg>${BASE_URL}/history</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:05.389374" elapsed="1.074914"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:06.465019" elapsed="0.037367"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:06.517810" level="INFO">Current page contains text 'Histórico'.</msg>
+<arg>Histórico</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-30T15:16:06.503027" elapsed="0.014905"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:06.527419" level="INFO">Current page contains element '//div[contains(@class, 'timeline-card')]'.</msg>
+<arg>//div[contains(@class, 'timeline-card')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:16:06.518339" elapsed="0.009205"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:16:06.527950" elapsed="2.357724"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:16:05.389004" elapsed="3.496963"/>
+</test>
+<test id="s1-t14" name="Verify Filter History by Date" line="111">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:08.887014" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/history'.</msg>
+<arg>${BASE_URL}/history</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:08.886799" elapsed="1.081303"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:09.968567" elapsed="0.029129"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:09.998636" level="INFO">Typing text '2024-01-01' into text field '//input[@type='date']'.</msg>
+<msg time="2026-05-30T15:16:10.175164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:16:10.175399" level="FAIL">Element with locator '//input[@type='date']' not found.</msg>
+<arg>//input[@type='date']</arg>
+<arg>2024-01-01</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:16:09.998243" elapsed="0.178940">Element with locator '//input[@type='date']' not found.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>01/01/2024</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:10.177633" elapsed="0.000056"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:10.177981" elapsed="0.000048"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:16:08.886424" elapsed="1.291850">Element with locator '//input[@type='date']' not found.</status>
+</test>
+<test id="s1-t15" name="Verify SOS Page Loads Correctly" line="119">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:10.179443" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/sos'.</msg>
+<arg>${BASE_URL}/sos</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:10.179105" elapsed="0.904510"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:11.084142" elapsed="0.034981"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:11.132591" level="INFO">Current page contains text 'SOS'.</msg>
+<arg>SOS</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-05-30T15:16:11.119560" elapsed="0.013157"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:11.142825" level="INFO">Current page contains element '//section[contains(@class, 'sos-section')]'.</msg>
+<arg>//section[contains(@class, 'sos-section')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-05-30T15:16:11.133112" elapsed="0.009841"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-30T15:16:11.143393" elapsed="2.234432"/>
+</kw>
+<status status="PASS" start="2026-05-30T15:16:10.178682" elapsed="3.199562"/>
+</test>
+<test id="s1-t16" name="Verify SOS Call Button" line="126">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:13.379371" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/sos'.</msg>
+<arg>${BASE_URL}/sos</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-30T15:16:13.379154" elapsed="0.980510"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-30T15:16:14.360025" elapsed="0.028135"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-30T15:16:14.388884" level="INFO">Clicking button '//button[contains(text(), 'Ligar')]'.</msg>
+<msg time="2026-05-30T15:16:14.569277" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-30T15:16:14.569466" level="FAIL">Button with locator '//button[contains(text(), 'Ligar')]' not found.</msg>
+<arg>//button[contains(text(), 'Ligar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-05-30T15:16:14.388604" elapsed="0.182383">Button with locator '//button[contains(text(), 'Ligar')]' not found.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Ligando...</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:14.571269" elapsed="0.000034"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-05-30T15:16:14.571456" elapsed="0.000032"/>
+</kw>
+<status status="FAIL" start="2026-05-30T15:16:13.378769" elapsed="1.192912">Button with locator '//button[contains(text(), 'Ligar')]' not found.</status>
+</test>
+<status status="FAIL" start="2026-05-30T15:15:37.468017" elapsed="37.104516"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="9" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Cases" id="s1" pass="7" fail="9" skip="0">Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
